@@ -23,7 +23,9 @@ const Index = () => {
             <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
               About
             </a>
-            <Button variant="gaming" size="sm">Get Started</Button>
+            <Button variant="gaming" size="sm" asChild>
+              <a href="/game">Get Started</a>
+            </Button>
           </nav>
         </div>
       </header>
@@ -67,9 +69,11 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              <Play className="w-5 h-5" />
-              Start Your Quest
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+              <a href="/game">
+                <Play className="w-5 h-5" />
+                Start Your Quest
+              </a>
             </Button>
             <Button variant="energy" size="lg" className="text-lg px-8 py-4">
               <Search className="w-5 h-5" />
@@ -119,10 +123,12 @@ const Index = () => {
               </div>
               
               <div className="mt-8">
-                <Button variant="gaming" size="lg" className="text-lg px-8 py-4">
+              <Button variant="gaming" size="lg" className="text-lg px-8 py-4" asChild>
+                <a href="/game">
                   <MessageCircle className="w-5 h-5" />
                   Chat with Sage
-                </Button>
+                </a>
+              </Button>
               </div>
             </div>
           </div>
@@ -229,9 +235,11 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Join the gaming revolution in media literacy education. Build critical thinking skills while having fun!
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-12 py-4">
-              <Play className="w-6 h-6" />
-              Begin Your Adventure
+            <Button variant="hero" size="lg" className="text-lg px-12 py-4" asChild>
+              <a href="/game">
+                <Play className="w-6 h-6" />
+                Begin Your Adventure
+              </a>
             </Button>
           </div>
         </div>
