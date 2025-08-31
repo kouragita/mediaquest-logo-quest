@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Play, Search, Shield, Trophy, Users, Zap, MessageCircle } from "lucide-react";
+import { Play, Search, Shield, Trophy, Users, Zap } from "lucide-react";
 import logoImage from "@/assets/mediaquest-logo.png";
-import owlMascot from "@/assets/owl-mascot.png";
 
 const Index = () => {
   return (
@@ -23,9 +22,7 @@ const Index = () => {
             <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
               About
             </a>
-            <Button variant="gaming" size="sm" asChild>
-              <a href="/game">Get Started</a>
-            </Button>
+            <Button variant="gaming" size="sm">Get Started</Button>
           </nav>
         </div>
       </header>
@@ -33,19 +30,6 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
-        
-        {/* Floating Owl Mascot */}
-        <div className="absolute top-20 right-8 md:right-20 z-20 hidden lg:block">
-          <div className="animate-float">
-            <img 
-              src={owlMascot} 
-              alt="MediaQuest Owl Guide" 
-              className="w-24 h-24 drop-shadow-lg hover:scale-110 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-energy/10 rounded-full blur-lg animate-glow-pulse"></div>
-          </div>
-        </div>
-        
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-8 flex justify-center">
             <div className="relative">
@@ -69,68 +53,14 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
-              <a href="/game">
-                <Play className="w-5 h-5" />
-                Start Your Quest
-              </a>
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              <Play className="w-5 h-5" />
+              Start Your Quest
             </Button>
             <Button variant="energy" size="lg" className="text-lg px-8 py-4">
               <Search className="w-5 h-5" />
               Explore Demo
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Your Guide Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/5 to-energy/5">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-            <div className="lg:w-1/3 flex justify-center">
-              <div className="relative animate-fade-in">
-                <img 
-                  src={owlMascot} 
-                  alt="Sage - Your MediaQuest Guide" 
-                  className="w-80 h-80 drop-shadow-xl animate-float"
-                />
-                <div className="absolute inset-0 bg-energy/20 rounded-full blur-2xl animate-glow-pulse"></div>
-              </div>
-            </div>
-            
-            <div className="lg:w-2/3 text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-                Meet Sage
-                <br />
-                <span className="text-2xl md:text-3xl text-muted-foreground font-normal">Your Digital Wisdom Guide</span>
-              </h2>
-              
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Sage is your friendly companion throughout your MediaQuest journey. With advanced digital glasses that can spot 
-                misinformation from miles away, Sage combines ancient wisdom with cutting-edge technology to help you navigate 
-                the complex world of digital media.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <div className="flex items-center gap-3 text-primary">
-                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse"></div>
-                  <span className="font-medium">Real-time fact checking assistance</span>
-                </div>
-                <div className="flex items-center gap-3 text-primary">
-                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse"></div>
-                  <span className="font-medium">Personalized learning guidance</span>
-                </div>
-              </div>
-              
-              <div className="mt-8">
-              <Button variant="gaming" size="lg" className="text-lg px-8 py-4" asChild>
-                <a href="/game">
-                  <MessageCircle className="w-5 h-5" />
-                  Chat with Sage
-                </a>
-              </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -235,11 +165,9 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Join the gaming revolution in media literacy education. Build critical thinking skills while having fun!
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-12 py-4" asChild>
-              <a href="/game">
-                <Play className="w-6 h-6" />
-                Begin Your Adventure
-              </a>
+            <Button variant="hero" size="lg" className="text-lg px-12 py-4">
+              <Play className="w-6 h-6" />
+              Begin Your Adventure
             </Button>
           </div>
         </div>
