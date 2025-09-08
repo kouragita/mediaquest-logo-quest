@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { BookOpen, Trophy, HelpCircle, Play, Home, User } from "lucide-react"
+import { BookOpen, Trophy, HelpCircle, Play, Home, User, Brain, Target } from "lucide-react"
 import { NavLink, useLocation } from "react-router-dom"
 import {
   Sidebar,
@@ -16,8 +16,8 @@ import logoImage from "@/assets/mediaquest-logo.png"
 
 const gameItems = [
   { title: "Dashboard", url: "/game/dashboard", icon: Home },
-  { title: "Quizzes", url: "/game/quizzes", icon: HelpCircle },
-  { title: "Leaderboard", url: "/game/leaderboard", icon: Trophy },
+  { title: "Social Media Game", url: "/game/social-media", icon: Brain },
+  { title: "Fallacy Detector", url: "/game/fallacies", icon: Target },
   { title: "Learn", url: "/game/learn", icon: BookOpen },
 ]
 
