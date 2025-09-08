@@ -8,6 +8,9 @@ import Dashboard from "./pages/Dashboard";
 import GameLayout from "./pages/GameLayout";
 import SocialMediaGame from "./pages/SocialMediaGame";
 import FallacyGame from "./pages/FallacyGame";
+import Learn from "./pages/Learn";
+import Quiz from "./pages/Quiz";
+import Leaderboard from "./pages/Leaderboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="social-media" element={<SocialMediaGame />} />
             <Route path="fallacies" element={<FallacyGame />} />
+            <Route path="learn" element={<Learn />} />
+            <Route path="quiz" element={<Quiz />} />
+            <Route path="leaderboard" element={<Leaderboard />} />
             <Route index element={<Dashboard />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -19,6 +19,8 @@ const gameItems = [
   { title: "Social Media Game", url: "/game/social-media", icon: Brain },
   { title: "Fallacy Detector", url: "/game/fallacies", icon: Target },
   { title: "Learn", url: "/game/learn", icon: BookOpen },
+  { title: "Quiz", url: "/game/quiz", icon: HelpCircle },
+  { title: "Leaderboard", url: "/game/leaderboard", icon: Trophy },
 ]
 
 export function GameSidebar() {
